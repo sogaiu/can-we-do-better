@@ -5,15 +5,7 @@
           (string/format "expected an integer, got: %p" x))
   (when (= x 0)
     (break 1))
-  (var ax (math/abs x))
-  (var n 1)
-  (var power 10)
-  (while true
-    (when (< ax power)
-      (break))
-    (++ n)
-    (*= power 10))
-  n)
+  (inc (math/floor (math/log10 (math/abs x)))))
 
 (comment
 
