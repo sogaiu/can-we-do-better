@@ -44,25 +44,32 @@
 (comment
 
   (merge-sort @[])
-  # => @[]
+  # =>
+  @[]
 
   (merge-sort @[1])
-  # => @[1]
+  # =>
+  @[1]
 
   (merge-sort @[1 3 2])
-  # => @[1 2 3]
+  # =>
+  @[1 2 3]
 
   (merge-sort @[5 4 1 8 7 2 6 3])
-  # => @[1 2 3 4 5 6 7 8]
+  # =>
+  @[1 2 3 4 5 6 7 8]
 
   (merge-sort @[2 3 2])
-  # => @[2 2 3]
+  # =>
+  @[2 2 3]
 
   (let [n 100
         arr (seq [i :range [0 n]]
               (* n (math/random)))]
     (deep= (merge-sort (array ;arr))
            (sort (array ;arr))))
-  # => true
+  # =>
+  true
 
   )
+

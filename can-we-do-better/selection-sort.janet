@@ -21,25 +21,32 @@
 (comment
 
   (selection-sort! @[])
-  # => @[]
+  # =>
+  @[]
 
   (selection-sort! @[1])
-  # => @[1]
+  # =>
+  @[1]
 
   (selection-sort! @[1 3 2])
-  # => @[1 2 3]
+  # =>
+  @[1 2 3]
 
   (selection-sort! @[5 4 1 8 7 2 6 3])
-  # => @[1 2 3 4 5 6 7 8]
+  # =>
+  @[1 2 3 4 5 6 7 8]
 
   (selection-sort! @[2 3 2])
-  # => @[2 2 3]
+  # =>
+  @[2 2 3]
 
   (let [n 100
         arr (seq [i :range [0 n]]
               (* n (math/random)))]
     (deep= (selection-sort! (array ;arr))
            (sort (array ;arr))))
-  # => true
+  # =>
+  true
 
   )
+

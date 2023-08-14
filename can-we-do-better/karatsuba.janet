@@ -51,33 +51,43 @@
 (comment
 
   (karatsuba 1 2)
-  # => 2
+  # =>
+  2
 
   (karatsuba 10 20)
-  # => 200
+  # =>
+  200
 
   (karatsuba 99 99)
-  # => (* 99 99)
+  # =>
+  (* 99 99)
 
   (karatsuba 100 100)
-  # => (* 100 100)
+  # =>
+  (* 100 100)
 
   (karatsuba 256 256)
-  # => (* 256 256)
+  # =>
+  (* 256 256)
 
   (karatsuba 1024 2048)
-  # => 2097152
+  # =>
+  2097152
 
   (karatsuba 65536 65536)
-  # => (* 65536 65536)
+  # =>
+  (* 65536 65536)
 
   (karatsuba 131072 131072)
-  # => (* 131072 131072)
+  # =>
+  (* 131072 131072)
 
   (try
     (karatsuba 1 10)
     ([e]
       (string/has-prefix? "number of digits differ for" e)))
-  # => true
+  # =>
+  true
 
   )
+

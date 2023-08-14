@@ -44,33 +44,43 @@
 (comment
 
   (rec-int-mult 1 2)
-  # => 2
+  # =>
+  2
 
   (rec-int-mult 10 20)
-  # => 200
+  # =>
+  200
 
   (rec-int-mult 99 99)
-  # => (* 99 99)
+  # =>
+  (* 99 99)
 
   (rec-int-mult 100 100)
-  # => (* 100 100)
+  # =>
+  (* 100 100)
 
   (rec-int-mult 256 256)
-  # => (* 256 256)
+  # =>
+  (* 256 256)
 
   (rec-int-mult 1024 2048)
-  # => 2097152
+  # =>
+  2097152
 
   (rec-int-mult 65536 65536)
-  # => (* 65536 65536)
+  # =>
+  (* 65536 65536)
 
   (rec-int-mult 131072 131072)
-  # => (* 131072 131072)
+  # =>
+  (* 131072 131072)
 
   (try
     (rec-int-mult 1 10)
     ([e]
       (string/has-prefix? "number of digits differ for" e)))
-  # => true
+  # =>
+  true
 
   )
+
