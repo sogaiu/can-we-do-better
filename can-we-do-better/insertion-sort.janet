@@ -14,6 +14,7 @@
         (put arr (inc i) cur-elt))
       (-- i))
     (put arr (inc i) picked-elt))
+  #
   arr)
 
 (comment

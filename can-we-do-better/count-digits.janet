@@ -1,10 +1,12 @@
 (defn count-digits
-  ``Count the number of digits in an integer `x`.``
+  ``
+  Count the number of digits in an integer `x`.
+  ``
   [x]
-  (assert (int? x)
-          (string/format "expected an integer, got: %p" x))
+  (assertf (int? x) "expected an integer, got: %p" x)
   (when (= x 0)
     (break 1))
+  #
   (-> (math/abs x)
       math/log10
       math/floor

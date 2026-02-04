@@ -16,6 +16,7 @@
           [min-idx min-item] min-pair]
       (put arr unsorted-idx min-item)
       (put arr min-idx elt)))
+  #
   arr)
 
 (comment
